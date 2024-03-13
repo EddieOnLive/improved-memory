@@ -13,6 +13,8 @@ import fiscalesRoutes from "./routes/fiscales.routes.js";
 import equipoRoutes from "./routes/equipo.routes.js";
 import pescadorRoutes from "./routes/pescadores.routes.js";
 import inicioRoutes from "./routes/inicio.routes.js";
+import capturasRoutes from "./routes/cargaPiezas.routes.js";
+import informesRoutes from "./routes/informe.routes.js";
 
 const app = express();
 
@@ -33,11 +35,13 @@ app.use(medidasRoutes);
 app.use(horariosRoutes);
 
 app.use(torneosRoutes);
+app.use(informesRoutes);
 app.use(modalidadesRoutes);
 
 app.use(fiscalesRoutes);
 
 app.use(equipoRoutes);
+app.use(capturasRoutes);
 app.use(pescadorRoutes);
 
 app.listen(Puerto);

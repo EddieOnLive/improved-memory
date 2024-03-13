@@ -18,7 +18,6 @@ import HorariosForm from "./pages/HorariosForm";
 /* Fiscales */
 import FiscalesPage from "./pages/FiscalesPage";
 import FiscalesForm from "./pages/FiscalesForm";
-import CargaPageForm from "./pages/CargaPageForm";
 /* Admin */
 import AdminPage from "./pages/AdminPage";
 /* Categorías */
@@ -38,6 +37,9 @@ import MedidasForm from "./pages/MedidasForm";
 /* Clubes */
 import ClubPage from "./pages/ClubPage";
 import ClubesForm from "./pages/ClubesForm";
+/* Carga e Informe */
+import CargaPageForm from "./pages/CargaPageForm";
+import InformeTorneos from "./pages/InformeTorneos";
 
 function App() {
   return (
@@ -80,6 +82,7 @@ function App() {
               <Route path="/HorariosForm" element={<HorariosForm />} />
               <Route path="/HorariosForm/:id" element={<HorariosForm />} />
               <Route path="/CargarPiezas/" element={<CargaPageForm />} />
+              <Route path="/Informe/" element={<InformeTorneos />} />
 
               {/* Categoría */}
               <Route

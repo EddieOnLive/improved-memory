@@ -10,7 +10,6 @@ function inscripcionPage() {
     try {
       const resp = await getEquiposRequest();
       setEquipos(resp.data);
-      console.log(resp.data);
     } catch (error) {
       console.error(error);
     }
@@ -81,13 +80,12 @@ function inscripcionPage() {
                     ? `Observación: ${equipo.observacion}`
                     : "Sin observación"}
                 </p>
-                <div className="flex gap-1 mt-5 justify-center h-10">
+                <div className="flex gap-1 mt-5 justify-center h-20">
                   {/* Editar equipo */}
                   <button
                     className="bg-slate-800 px-2 py-1 text-white rounded-md"
                     onClick={
                        () => navigate(`/InscripcionEquipoForm/${equipo.id}`)
-                      /* console.log("Hola") */
                     }
                   >
                     Editar Equipo
@@ -105,7 +103,6 @@ function inscripcionPage() {
                     className="bg-slate-800 px-2 py-1 text-white rounded-md"
                     onClick={
                       () => navigate(`/NuevaInscripcion/${equipo.pescador_id2}/${equipo.pescador_id1}/${equipo.id}`)
-                      /* console.log("Hola") */
                     }
                   >
                     Editar Pescadores

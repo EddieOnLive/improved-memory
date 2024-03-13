@@ -20,12 +20,10 @@ function Inicio() {
           onSubmit={async (values) => {
             const inicio = await getInicioRequestUno(values.usuario, values.password);
             if (inicio.data.usuario_encontrado==1) {
-              console.log("Si");
+              navigate("/informe")
             } else {
-              console.log("No");
+              alert("Error, usuario o contraseña incorrectos")
             }
-            console.log(values);
-            /* navigate("/inscripcion/"); */
           }}
         >
           {({ handleSubmit, handleChange, values, isSubmitting }) => (

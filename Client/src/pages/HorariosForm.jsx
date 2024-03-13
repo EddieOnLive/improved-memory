@@ -16,8 +16,8 @@ function HorariosForm() {
   const editHorario = async () => {
     if (params.id) {
       const response = await getHorariosRequestUna(params.id);
-      const aux1 = response.data.horaEntrada
-      const aux2 = response.data.horaSalida
+      const aux1 = response.data.horaEntrada;
+      const aux2 = response.data.horaSalida;
       console.log(aux1.substring(0, aux1.length - 8));
       console.log(aux2.substring(0, aux2.length - 8));
 
@@ -46,10 +46,10 @@ function HorariosForm() {
   return (
     <>
       <div>
-        <h1 className="text-5xl text-white font-bold text-center py-3">
-          Horario Nuevo
-        </h1>
         <div className="bg-slate-300 max-w-m rounded-md p-4 m x-auto mt-10 flex-1">
+          <h1 className="text-5xl text-black font-bold text-center py-3">
+            Horario Nuevo
+          </h1>
           <Formik
             initialValues={horarios}
             enableReinitialize={true}

@@ -61,48 +61,52 @@ function TorneosPage() {
           </Link>
         </button>
         {/* Tarjetas */}
-        <div className="columns-2 mt-4 flex">
-          {torneos != "" ? (
-            torneos.map((torneo) => (
-              <div
-                className="bg-zinc-700 rounded-md mx-4 my-4 py-4 px-4 text-center"
-                key={torneo.id}
-              >
-                <h2 className="text-3xl font-bold text-white">
-                  {torneo.torneoDescripcion}
-                </h2>
-                <h2 className="text-2xl font-bold text-white">Inicio</h2>
-                <h3 className="text-xl text-white">{torneo.fechaInicio}</h3>
-                <h3 className="text-xl text-white">{torneo.horaInicio}</h3>
-                {/* Salida */}
-                <h2 className="text-2xl font-bold text-white">Finalización</h2>
-                <h3 className="text-xl text-white">{torneo.fechaFin}</h3>
-                <h3 className="text-xl text-white">{torneo.horaFin}</h3>
-                <div className="flex gap-1 mt-5 justify-center h-10">
-                  <button
-                    className="bg-red-500 px-2 py-1 mr-4 text-white rounded-md"
-                    onClick={() => {
-                      borrarTorneo(torneo.id);
-                    }}
-                  >
-                    Borrar
-                  </button>
-                  <button
-                    className="bg-slate-800 px-2 py-1 text-white rounded-md"
-                    onClick={() => navigate(`/TorneosForm/${torneo.id}`)}
-                  >
-                    Editar
-                  </button>
+        <div>
+          <div className="columns-2 mt-4 flex">
+            {torneos != "" ? (
+              torneos.map((torneo) => (
+                <div
+                  className="bg-zinc-700 rounded-md mx-4 my-4 py-4 px-4 text-center container"
+                  key={torneo.id}
+                >
+                  <h2 className="text-2xl font-bold text-white">
+                    {torneo.torneoDescripcion}
+                  </h2>
+                  <h2 className="text-xl font-bold text-white">Inicio</h2>
+                  <h3 className="text-xs text-white">{torneo.fechaInicio}</h3>
+                  <h3 className="text-xs text-white">{torneo.horaInicio}</h3>
+                  {/* Salida */}
+                  <h2 className="text-xl font-bold text-white">
+                    Finalización
+                  </h2>
+                  <h3 className="text-xs text-white">{torneo.fechaFin}</h3>
+                  <h3 className="text-xs text-white">{torneo.horaFin}</h3>
+                  <div className="flex gap-1 mt-5 justify-center h-10">
+                    <button
+                      className="bg-red-500 px-2 py-1 mr-4 text-white rounded-md"
+                      onClick={() => {
+                        borrarTorneo(torneo.id);
+                      }}
+                    >
+                      Borrar
+                    </button>
+                    <button
+                      className="bg-slate-800 px-2 py-1 text-white rounded-md"
+                      onClick={() => navigate(`/TorneosForm/${torneo.id}`)}
+                    >
+                      Editar
+                    </button>
+                  </div>
                 </div>
+              ))
+            ) : (
+              <div className="flex justify-center align-middle h-full w-full">
+                <h1 className="text-3xl text-white font-bold text-center py-3">
+                  No se encontraron piezas
+                </h1>
               </div>
-            ))
-          ) : (
-            <div className="flex justify-center align-middle h-full w-full">
-              <h1 className="text-3xl text-white font-bold text-center py-3">
-                No se encontraron piezas
-              </h1>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </>

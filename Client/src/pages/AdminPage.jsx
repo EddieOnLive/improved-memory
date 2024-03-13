@@ -38,12 +38,6 @@ function AdminPage() {
           >
             Clubes
           </Link>
-          {/* <Link
-            to="/"
-            className="bg-indigo-500 mt-10 px-2 block text-center py-2 rounded-xl text-white max-w-3xl"
-          >
-            Volver
-          </Link> */}
         </div>
       </div>
     </>

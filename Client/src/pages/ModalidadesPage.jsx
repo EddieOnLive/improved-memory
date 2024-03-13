@@ -51,10 +51,10 @@ function ModalidadesPage() {
             className="bg-zinc-700 rounded-md mx-4 my-4 py-4 px-4 col-2 w-44"
             key={modalidad.id}
             >
-            <h2 className="text-xl font-bold text-white">{modalidad.descripcion}</h2>
+            <h2 className="text-xl font-bold text-white text-center">{modalidad.descripcion}</h2>
             <div className="flex gap-1 mt-5 justify-center">
               <button
-                className="bg-red-500 px-2 py-1 text-white rounded-md"
+                className="bg-red-500 px-2 py-1 mr-1 text-white rounded-md"
                 onClick={() => {
                   borrarModalidades(modalidad.id);
                 }}
@@ -62,7 +62,7 @@ function ModalidadesPage() {
                 Borrar
               </button>
               <button
-                className="bg-slate-800 px-2 py-1 text-white rounded-md"
+                className="bg-slate-800 px-2 py-1 ml-1 text-white rounded-md"
                 onClick={() => navigate(`/ModalidadesForm/${modalidad.id}`)}
                 >
                 Editar

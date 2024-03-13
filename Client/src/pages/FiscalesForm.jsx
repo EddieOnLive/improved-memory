@@ -19,8 +19,6 @@ function FiscalesForm() {
     apellido: "",
     documento: "",
     contacto: "",
-    usuario: "",
-    password: "",
     torneoid: "",
   });
 
@@ -160,32 +158,6 @@ function FiscalesForm() {
                   onChange={handleChange}
                   required
                   value={values.contacto || ''}
-                />
-                {/* usuario */}
-                <label className="block uppercase text-center font-bold">
-                  Usuario
-                </label>
-                <input
-                  type="text"
-                  name="usuario"
-                  placeholder="Nombre de usuario"
-                  className="px-2 py-1 rounded-sm w-full"
-                  onChange={handleChange}
-                  required
-                  value={values.usuario || ''}
-                />
-                {/* Contraseña */}
-                <label className="block uppercase text-center font-bold">
-                  Contraseña
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Contraseña"
-                  className="px-2 py-1 rounded-sm w-full"
-                  onChange={handleChange}
-                  required
-                  value={values.password || ''}
                 />
                 {/* Torneo en el que participa */}
                 <label className="block uppercase text-center font-bold">

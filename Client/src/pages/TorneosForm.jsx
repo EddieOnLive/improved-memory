@@ -90,7 +90,7 @@ function TorneosForm() {
               <select
                 name="modalidad"
                 id="modalidad"
-                className="px-2 py-1 rounded-sm w-full"
+                className="px-2 py-1 rounded-sm w-full text-center"
                 value={values.modalidad}
                 onChange={handleChange}
                 required

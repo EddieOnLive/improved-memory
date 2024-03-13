@@ -74,12 +74,6 @@ function HorariosPage() {
                   <h2 className="text-sm font-bold text-zinc-300 m-3 text-center">
                     Torneo en el que participa: {fiscal.torneoDescripcion}
                   </h2>
-                  <h2 className="text-sm font-bold text-zinc-300 m-3 text-center">
-                    Usuario: {fiscal.usuario}
-                  </h2>
-                  <h2 className="text-sm font-bold text-zinc-300 m-3 text-center">
-                    Contraseña: {fiscal.contraseña}
-                  </h2>
                   <div className="flex gap-1 mt-5 justify-center h-10 m-3 text-center">
                     <button
                       className="bg-red-500 px-2 py-1 mr-4 text-white rounded-md"
@@ -102,7 +96,7 @@ function HorariosPage() {
           ) : (
             <div className="flex justify-center align-middle h-full w-full">
               <h1 className="text-3xl text-white font-bold text-center py-3">
-                No se encontraron piezas
+                No se encontraron Fiscales
               </h1>
             </div>
           )}

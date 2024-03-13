@@ -285,7 +285,7 @@ function InscripcionForm() {
                   />
                   {/* Apellido Comp */}
                   <label className="block uppercase text-center font-bold">
-                    Perez
+                    Apellido
                   </label>
                   <input
                     type="text"

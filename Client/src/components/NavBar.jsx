@@ -6,13 +6,13 @@ import { useEffect, useRef } from "react";
 function NavBar() {
   return (
     <div className="bg-neutral-800 flex justify-between px-20 py-4 sticky top-0">
-      <Link to="/" className="text-white font-bold">
+      <Link to="/Informe" className="text-white font-bold">
         <h1>CCPBV</h1>
       </Link>
       <ul className="flex gap-x-1">
         <li>
           <Link
-            to="/"
+            to="/Informe"
             className="bg-indigo-500 hover:bg-indigo-700 text-white px-2 py-1"
           >
             Incio
