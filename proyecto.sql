@@ -280,7 +280,7 @@ INSERT INTO `pescador` (`id`, `nombre`, `apellido`, `documento`, `tipo_documento
 (22, 'popo', 'qweqwe', 2, 1, 2, '123123123123', 'Masculino', 3),
 (23, 'Juanito', 'Perez', 1, 2, 3, '123123', 'Femenino', 3),
 (24, 'Eduardo', 'Welchen', 3, 1, 23, '+54-000000', 'Masculino', 3),
-(25, 'Marcos', 'Ledezma', 1, 1, 12, '123123123123', 'Masculino', 4);
+(25, 'Marcos', 'L', 1, 1, 12, '123123123123', 'Masculino', 4);
 
 -- --------------------------------------------------------
 
